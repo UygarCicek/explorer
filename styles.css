@@ -61,25 +61,6 @@ canvas {
     border-radius: 8px;
 }
 
-/* Minimap styles */
-#minimap {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #555;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 110;
-    overflow: hidden;
-}
-
-#minimap canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
 /* Style adjustments for debug tools */
 .lil-gui {
     top: 150px !important; /* Adjust top position to move it down */

@@ -170,8 +170,8 @@ export class Truck {
         const moveDistance = movementInput * tc.MOVE_SPEED * deltaTime;
         if (moveDistance !== 0) {
             // Get forward vector based on current body rotation
-            // Corrected forward vector assuming model's forward is +X
-            const forward = new THREE.Vector3(1, 0, 0); 
+            // Corrected forward vector assuming model's forward is -X (Changed from +X)
+            const forward = new THREE.Vector3(-1, 0, 0); // <--- Changed from (1, 0, 0)
             // Adjust this vector based on how your model is oriented.
             // If forward is -X in the model file, use: const forward = new THREE.Vector3(-1, 0, 0); 
             forward.applyQuaternion(this.activeTruckObject.quaternion);
