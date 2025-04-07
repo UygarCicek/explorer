@@ -1,0 +1,93 @@
+/* Basic CSS reset */
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    font-family: sans-serif; /* Basic font */
+    background-color: #000; /* Ensure background covers */
+}
+
+/* Ensure canvas fills the screen */
+canvas {
+    display: block;
+}
+
+/* Build info box (top right) */
+#build-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto;
+    max-width: 40%;
+    text-align: right;
+    z-index: 100;
+    display: block;
+    color: #eee;
+    background-color: rgba(50, 50, 50, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    line-height: 1.3;
+}
+
+/* Error message display (center) */
+#error-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(200, 0, 0, 0.85);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    z-index: 200;
+    display: none;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    font-size: 1.1em;
+}
+
+/* Loading indicator */
+#loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+    font-size: 1.5em;
+    z-index: 150;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Minimap styles */
+#minimap {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #555;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 110;
+    overflow: hidden;
+}
+
+#minimap canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style adjustments for debug tools */
+.lil-gui {
+    top: 150px !important; /* Adjust top position to move it down */
+    right: 10px !important; /* Keep it on the right */
+}
+
+.stats {
+    /* stats.js usually positions itself, but we can override if needed */
+    /* Example: move it below lil-gui */
+    /* top: 350px !important; */ 
+} 

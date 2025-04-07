@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+- **Versioning:**  
+  Use major.minor version numbers for every code update. Even though the updates are under the hood i.e. debugging helpers, log files etc.
+
+- **Change Log:**  
+  Log each update with the version, a brief (≤5-word) explanation, and a timestamp (hh:mm).
+
+- **Display:**  
+  Display the last 10 changes in the top-right info area.
+
+
